@@ -1,0 +1,597 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c2c2c; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.cta a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    background-color: #ff5733; /* Call to action button color */
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta a:hover {
+    background-color: #ff8f66; /* Lighter color on hover */
+}
+.hero {
+    background-image: url('p15.png'); /* Add your hero background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; /* White text */
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensures content is above the overlay */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.hero-button {
+    text-decoration: none;
+    background-color: #ff5733; /* Button color */
+    color: #ffffff; /* White text */
+    padding: 15px 30px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.hero-button:hover {
+    background-color: #ff8f66; /* Lighter color on hover */
+}
+.features {
+    background-color: #2c2c2c; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between features */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.feature {
+    background-color: #3a3a3a; /* Slightly lighter dark background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures images fit within the border radius */
+    width: 300px; /* Fixed width for features */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.feature:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.feature img {
+    width: 100%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin: 15px 0 10px; /* Spacing around the title */
+}
+
+.feature p {
+    font-size: 16px;
+    color: #cccccc; /* Lighter text color for description */
+    padding: 0 15px 15px; /* Padding for description */
+}
+.menu-preview {
+    background-color: #2c2c2c; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu-preview h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between menu items */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.menu-item {
+    background-color: #3a3a3a; /* Slightly lighter dark background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures images fit within the border radius */
+    width: 300px; /* Fixed width for menu items */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.menu-item img {
+    width: 100%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.menu-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.menu-details h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.menu-details p {
+    font-size: 16px;
+    color: #cccccc; /* Lighter text color for description */
+    margin: 0 0 10px;
+}
+
+.menu-details .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcc00; /* Highlighted price */
+}
+.limited-time-offers {
+    background-color: #2c2c2c; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.limited-time-offers h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between offers */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.offer {
+    background-color: #3a3a3a; /* Slightly lighter dark background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures images fit within the border radius */
+    width: 300px; /* Fixed width for offers */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.offer:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.offer img {
+    width: 100%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.offer-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.offer-details h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.offer-details p {
+    font-size: 16px;
+    color: #cccccc; /* Lighter text color for description */
+    margin: 0 0 10px;
+}
+
+.offer-expiry {
+    font-size: 14px;
+    color: #ffcc00; /* Highlighted expiry date */
+    font-weight: bold;
+}
+.location-delivery {
+    background-color: #2c2c2c; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.location-delivery h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.location-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px; /* Space between location and delivery sections */
+}
+
+.location-info {
+    background-color: #3a3a3a; /* Slightly lighter dark background */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    text-align: left;
+}
+
+.location-info h3 {
+    font-size: 24px;
+    margin: 0 0 15px;
+}
+
+.location-info p {
+    font-size: 16px;
+    color: #cccccc; /* Lighter text color for details */
+    margin: 5px 0;
+}
+
+.map-preview {
+    max-width: 400px;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures images fit within the border radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.map-preview img {
+    width: 100%;
+    height: auto;
+}
+
+.delivery-options {
+    background-color: #3a3a3a; /* Slightly lighter background */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Center the delivery options */
+    text-align: center;
+}
+
+.delivery-options h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.delivery-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between logos */
+    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+    margin-bottom: 15px;
+}
+
+.delivery-logos img {
+    width: 100px;
+    height: auto; /* Keeps logos proportional */
+    filter: grayscale(100%); /* Optional: make logos grayscale */
+    transition: filter 0.3s ease;
+}
+
+.delivery-logos img:hover {
+    filter: none; /* Remove grayscale effect on hover */
+}
+
+.delivery-options p {
+    font-size: 16px;
+    color: #cccccc; /* Lighter text color */
+    margin-top: 10px;
+}
+.customer-reviews {
+    background-color: #2c2c2c; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.customer-reviews h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between reviews */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.review {
+    background-color: #3a3a3a; /* Slightly lighter dark background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    max-width: 300px; /* Fixed width for reviews */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: transform 0.3s ease;
+}
+
+.review:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-header h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.rating {
+    color: #ffcc00; /* Highlighted color for stars */
+}
+
+.rating span {
+    font-size: 18px;
+    margin-right: 2px; /* Space between stars */
+}
+
+.review p {
+    font-size: 16px;
+    color: #cccccc; /* Lighter text color for review content */
+    margin: 0;
+}
+.social-proof {
+    background-color: #2c2c2c; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.social-proof h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+}
+
+.testimonials {
+    background-color: #3a3a3a; /* Slightly lighter dark background */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #cccccc; /* Lighter text color for testimonials */
+    margin: 0;
+}
+
+.testimonial span {
+    font-size: 14px;
+    color: #ffcc00; /* Highlighted text for username */
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.social-links {
+    background-color: #3a3a3a; /* Slightly lighter background */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    text-align: center;
+}
+
+.social-links h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between social icons */
+}
+
+.icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.icons a img:hover {
+    transform: scale(1.1); /* Slightly larger on hover */
+}
+.footer {
+    background-color: #2c2c2c; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-links h3, .footer-contact h3, .footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Highlight color for section titles */
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #cccccc; /* Lighter text color for links */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-social .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social .social-icons a img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.footer-bottom {
+    border-top: 1px solid #444444; /* Divider line */
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #cccccc; /* Lighter text color for copyright */
+}
+.sticky-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c1c1c; /* Darker background for footer */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Shadow for a slight lift effect */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.sticky-footer a {
+    text-decoration: none;
+    color: #cccccc; /* Lighter text for icons */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s ease;
+    font-size: 12px;
+}
+
+.sticky-footer a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.sticky-footer img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px; /* Space between icon and text */
+    transition: transform 0.3s ease;
+}
+
+.sticky-footer a:hover img {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
